@@ -99,7 +99,7 @@ if __name__ == "__main__":
     # creating an object of the Tk() class
     guiWindow = tk.Tk()
     # setting the title of the window
-    guiWindow.title("To-Do List Manager - JAVATPOINT")
+    guiWindow.title("To-Do List  - AB-920")
     # setting the geometry of the window
     guiWindow.geometry("500x450+750+250")
     # disabling the resizable option
@@ -129,7 +129,7 @@ if __name__ == "__main__":
 
     # defining a label using the ttk.Label() widget
     header_label = ttk.Label(
-        header_frame, text="To-Do List", font=("Brush Script MT", "30"), background="#FAEBD7", foreground="#8B4513"
+        header_frame, text="Information Security To-Do List", font=("Times New Roman", "22"), background="#FAEBD7", foreground="#8B4513"
     )
     # using the pack() method to place the label in the application
     header_label.pack(padx=20, pady=20)
