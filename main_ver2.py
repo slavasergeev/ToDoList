@@ -104,8 +104,8 @@ if __name__ == "__main__":
     guiWindow.geometry("500x450+750+250")
     # disabling the resizable option
     guiWindow.resizable(0, 0)
-    # setting the background color to #FAEBD7
-    guiWindow.configure(bg="#FAEBD7")
+    # setting the background color to #F5F5DC
+    guiWindow.configure(bg="#F5F5DC")
 
     # using the connect() method to connect to the database
     the_connection = sql.connect("listOfTasks.db")
@@ -118,9 +118,9 @@ if __name__ == "__main__":
     tasks = []
 
     # defining frames using the tk.Frame() widget
-    header_frame = tk.Frame(guiWindow, bg="#FAEBD7")
-    functions_frame = tk.Frame(guiWindow, bg="#FAEBD7")
-    listbox_frame = tk.Frame(guiWindow, bg="#FAEBD7")
+    header_frame = tk.Frame(guiWindow, bg="#F5F5DC")
+    functions_frame = tk.Frame(guiWindow, bg="#F5F5DC")
+    listbox_frame = tk.Frame(guiWindow, bg="#F5F5DC")
 
     # using the pack() method to place the frames in the application
     header_frame.pack(fill="both")
@@ -129,7 +129,7 @@ if __name__ == "__main__":
 
     # defining a label using the ttk.Label() widget
     header_label = ttk.Label(
-        header_frame, text="To-Do List", font=("Brush Script MT", "30"), background="#FAEBD7", foreground="#8B4513"
+        header_frame, text="To-Do List", font=("Brush Script MT", "30"), background="#F5F5DC", foreground="#8B4513"
     )
     # using the pack() method to place the label in the application
     header_label.pack(padx=20, pady=20)
@@ -139,7 +139,7 @@ if __name__ == "__main__":
         functions_frame,
         text="Enter the Task:",
         font=("Consolas", "11", "bold"),
-        background="#FAEBD7",
+        background="#F5F5DC",
         foreground="#000000",
     )
     # using the place() method to place the label in the application
